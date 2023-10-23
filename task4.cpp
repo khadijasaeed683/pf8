@@ -14,18 +14,18 @@ int primeNo(int num)
 {
 	int  count=0;
 	
-		for (int c = num; c >= 1; c--)
-		{
+		
 			for(int n = 2; n < num; n++)
 			{
 			
-			if (c % n != 0)
+			if (num % n != 0)
 			{
 				count++;
+
 			}
+			n--;
 			}
 			
-		}
 	return count;
 		
 }
